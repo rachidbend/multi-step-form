@@ -1,0 +1,14 @@
+.homepage {
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: 27.4rem 1fr;
+  padding: 1.6rem;
+  height: 60rem;
+  width: 94rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.mainForm {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}

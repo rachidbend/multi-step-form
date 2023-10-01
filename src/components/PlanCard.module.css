@@ -1,0 +1,51 @@
+.planCard {
+  border: 1px solid hsl(231, 11%, 63%);
+  border-radius: 0.5rem;
+  /* width: 13.6rem; */
+  flex-grow: 1;
+  max-width: 24rem;
+  transition: background 360ms, border-color 360ms;
+}
+.planCardCheckbox {
+  display: none;
+}
+.planCardLabel {
+  padding: 1.6rem 1.5rem;
+  display: inline-block;
+  width: 100%;
+}
+.planCardIcon {
+  margin-bottom: 4.3rem;
+}
+.planCardTitle {
+  color: hsl(213, 96%, 18%);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0.6rem;
+  text-transform: capitalize;
+}
+.planCardPrice {
+  color: hsl(231, 11%, 63%);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0.6rem;
+}
+.planCardFree {
+  color: hsl(213, 96%, 18%);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+:global(.planCardActive) {
+  border: 1px solid hsl(213, 96%, 18%);
+  background-color: hsl(217, 100%, 97%);
+}

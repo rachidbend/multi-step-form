@@ -1,0 +1,30 @@
+.personalInfoContainer {
+  display: flex;
+  flex-direction: column;
+}
+.personalInfoLabel {
+  font-family: 'Ubuntu', sans-serif;
+  color: hsl(213, 96%, 18%);
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1.8rem;
+}
+
+.personalInfoInput {
+  font-family: 'Ubuntu', sans-serif;
+  color: hsl(213, 96%, 18%);
+  padding: 1.4rem 1.5rem;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.016rem;
+  margin-bottom: 2.4rem;
+}
+.personalInfoInput::placeholder {
+  color: hsl(231, 11%, 63%);
+  font-family: 'Ubuntu', sans-serif;
+}

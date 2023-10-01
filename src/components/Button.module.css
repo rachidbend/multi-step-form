@@ -1,0 +1,51 @@
+.btn {
+  font-size: 1.4rem;
+  padding: 1.5rem 2.9rem;
+  color: #fff;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  border-radius: 0.7rem;
+  font-family: 'Ubuntu', sans-serif;
+
+  border: 1px solid transparent;
+  transition: color 300ms ease-in-out;
+  transition: background 260ms ease-in-out;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btnNext {
+  background: #03295a;
+  border: 1px solid #03295a;
+}
+
+.btnNext:hover {
+  background-color: #fff;
+  color: #03295a;
+}
+
+.btnBack {
+  color: #9497a0;
+  background: none;
+  transition: color 300ms ease-in-out;
+}
+.btnBack:hover {
+  color: #5a5a5a;
+}
+
+.btnConfirm {
+  background: #483eff;
+}
+
+.btnConfirm:hover {
+  background: #fff;
+  color: #483eff;
+  border: 1px solid #483eff;
+}
+
+.btnEmpty {
+  color: transparent;
+  background: none;
+  cursor: auto;
+}

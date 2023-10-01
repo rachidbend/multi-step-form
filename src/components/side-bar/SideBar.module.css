@@ -1,0 +1,62 @@
+.sideBar {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  background-image: url('../../assets/images/bg-sidebar-desktop.svg');
+  /* background-repeat: no-repeat; */
+  padding: 20px;
+  height: 56.8rem;
+  background-size: cover;
+  padding-top: 4rem;
+}
+.sideBarStepContainer {
+  display: flex;
+  margin-bottom: 3rem;
+}
+.sideBarNumber {
+  color: #000;
+  font-family: Ubuntu;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.045rem;
+  width: 3.2rem;
+  height: 3.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+  transition: background 360ms;
+  margin-right: 1.6rem;
+  color: hsl(0, 0%, 100%);
+}
+
+:global(.active) .sideBarNumber {
+  background-color: hsl(206, 94%, 87%);
+  color: hsl(213, 96%, 18%);
+}
+.sideBarStep {
+  color: hsl(217, 100%, 97%);
+  font-family: Ubuntu;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.052rem;
+  text-transform: uppercase;
+}
+
+.sideBarTitle {
+  color: hsl(0, 0%, 100%);
+  font-family: Ubuntu;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.045rem;
+  text-transform: uppercase;
+}
