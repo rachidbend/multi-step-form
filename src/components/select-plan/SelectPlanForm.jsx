@@ -24,16 +24,38 @@ export default function SelectPlanForm() {
           ))}
         </div>
 
-        <div>
-          <span>monthly</span>
-          <label htmlFor="monthly-or-yearly"></label>
+        <div className={styles.yearMonthToggle}>
+          <span
+            className={`${styles.yearMonthToggleText} ${
+              isYearly ? '' : styles.isMonthlyActive
+            }`}
+          >
+            monthly
+          </span>
+          <label
+            htmlFor="monthly-or-yearly"
+            className={styles.yearMonthToggleLabel}
+          >
+            <span
+              className={`${styles.yearMonthToggleSpan} ${
+                isYearly ? '' : styles.toggleActive
+              }`}
+            ></span>
+          </label>
           <input
             type="checkbox"
             checked={isYearly}
             onChange={onYearlyChange}
             id="monthly-or-yearly"
+            className={styles.yearMonthToggleinput}
           />
-          <span>yearly</span>
+          <span
+            className={`${styles.yearMonthToggleText} ${
+              isYearly ? styles.isYearlyActive : ''
+            }`}
+          >
+            yearly
+          </span>
         </div>
       </div>
       <div className="btn--container">

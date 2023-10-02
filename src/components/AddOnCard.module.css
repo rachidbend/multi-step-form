@@ -1,0 +1,58 @@
+.addOnLabel {
+  display: flex;
+  align-items: center;
+  padding: 1.6rem 2.3rem;
+  border: 1px solid hsl(231, 11%, 63%);
+  border-radius: 0.5rem;
+}
+.addOnCheckbox {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  border: 1px solid hsl(231, 11%, 63%);
+  margin-right: 2.4rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addOnCheckboxActive {
+  background-color: hsl(243, 100%, 62%);
+}
+.addOnImage {
+  opacity: 0;
+  transform: translateY(-1px);
+}
+.addOnCheckboxActive .addOnImage {
+  opacity: 1;
+}
+.addOnInput {
+  display: none;
+}
+.addOnTitle {
+  color: hsl(213, 96%, 18%);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.016rem;
+  margin-bottom: 0.6rem;
+}
+.addOntext {
+  color: hsl(231, 11%, 63%);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.addOnPrice {
+  color: hsl(243, 100%, 62%);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: auto;
+}

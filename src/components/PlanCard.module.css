@@ -1,10 +1,14 @@
 .planCard {
-  border: 1px solid hsl(231, 11%, 63%);
+  border: 1px solid hsl(229, 24%, 87%);
   border-radius: 0.5rem;
   /* width: 13.6rem; */
-  flex-grow: 1;
-  max-width: 24rem;
+  width: 13.8rem;
+
   transition: background 360ms, border-color 360ms;
+}
+.planCard:hover {
+  border: 1px solid hsl(213, 96%, 18%);
+  cursor: pointer;
 }
 .planCardCheckbox {
   display: none;
