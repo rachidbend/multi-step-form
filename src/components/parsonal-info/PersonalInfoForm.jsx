@@ -2,11 +2,18 @@ import Button from '../Button';
 import useNavigateButton from '../../hooks/useNavigateButton';
 import { useForm } from '../../context/FormContext';
 import styles from './PersonalInfoForm.module.css';
+import { useEffect } from 'react';
 
 export default function PersonalInfoForm() {
   const nextPage = useNavigateButton('plan');
   const { onNameChange, name, onEmailChange, email, onPhoneChange, phone } =
     useForm();
+
+  let canAdvance = false;
+
+  if (!name || !email || !phone) canAdvance = false;
+  if (name && email && phone) canAdvance = true;
+
   return (
     <>
       <div>
@@ -60,7 +67,11 @@ export default function PersonalInfoForm() {
       </div>
       <div className="btn--container">
         <Button type={'empty'} />
-        <Button type={'next'} onClick={nextPage} />
+        <Button
+          type={'next'}
+          onClick={nextPage}
+          disabled={name && email && phone ? false : true}
+        />
       </div>
     </>
   );

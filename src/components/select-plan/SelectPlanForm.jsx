@@ -7,8 +7,8 @@ import styles from './SelectPlanForm.module.css';
 export default function SelectPlanForm() {
   const nextPage = useNavigateButton('add-ons');
   const backPage = useNavigateButton('info');
-  const { plans, isYearly, onYearlyChange } = useForm();
-
+  const { plans, isYearly, onYearlyChange, selectedPlan } = useForm();
+  console.log(Object.keys(selectedPlan).length);
   return (
     <>
       <div>
@@ -62,7 +62,11 @@ export default function SelectPlanForm() {
       </div>
       <div className="btn--container">
         <Button type={'back'} onClick={backPage} />
-        <Button type={'next'} onClick={nextPage} />
+        <Button
+          type={'next'}
+          onClick={nextPage}
+          disabled={Object.keys(selectedPlan).length === 0 ? true : false}
+        />
       </div>
     </>
   );

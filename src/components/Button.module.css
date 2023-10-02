@@ -15,6 +15,13 @@
   cursor: pointer;
 }
 
+.btn:disabled {
+  background-color: #e6e6e6;
+  color: #999b9c;
+  cursor: not-allowed;
+  border: 1px solid #e6e6e6;
+}
+
 .btnNext {
   background: #03295a;
   border: 1px solid #03295a;
@@ -48,4 +55,12 @@
   color: transparent;
   background: none;
   cursor: auto;
+  border: none;
+}
+
+.btnEmpty:disabled {
+  color: transparent;
+  background: none;
+  cursor: auto;
+  border: none;
 }

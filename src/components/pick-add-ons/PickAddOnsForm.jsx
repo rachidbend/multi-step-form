@@ -7,7 +7,7 @@ import styles from './PickAddOnsForm.module.css';
 export default function PickAddOnsForm() {
   const backPage = useNavigateButton('plan');
   const nextPage = useNavigateButton('summary');
-  const { addOns } = useForm();
+  const { addOns, selectedAddOnsNames } = useForm();
   return (
     <>
       <div>
