@@ -101,11 +101,11 @@ function reducer(state, action) {
     case 'addOn/remove':
       return {
         ...state,
-        selectedAddOns: state.selectedAddOns
-          .filter(addOn => addOn.addOnName !== action.payload)
-          .at(0),
-        selectedAddOnsNames: state.selectedAddOns.filter(
-          addOn => addOn === action.payload
+        selectedAddOns: state.selectedAddOns.filter(
+          addOn => addOn.addOnName !== action.payload
+        ),
+        selectedAddOnsNames: state.selectedAddOnsNames.filter(
+          addOn => addOn !== action.payload
         ),
       };
 
@@ -175,8 +175,10 @@ function FormProvider({ children }) {
   // add on change
   function onAddOnChange(e) {
     const value = e.target.value;
-    value;
-    selectedAddOns.includes(value)
+    console.log(value);
+
+    console.log(selectedAddOnsNames);
+    selectedAddOnsNames.includes(value)
       ? dispatch({ type: 'addOn/remove', payload: value })
       : dispatch({ type: 'addOn/add', payload: value });
   }

@@ -9,7 +9,11 @@ export default function AddOnCard({ addOn }) {
   return (
     <label
       htmlFor={addOn.addOnName.split(' ').at(0)}
-      className={`${styles.addOnLabel}`}
+      className={`${styles.addOnLabel} ${
+        selectedAddOnsNames.includes(addOn.addOnName)
+          ? styles.addOnLabelActive
+          : ''
+      } `}
     >
       <span
         className={`${styles.addOnCheckbox} ${

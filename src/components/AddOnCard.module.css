@@ -4,6 +4,12 @@
   padding: 1.6rem 2.3rem;
   border: 1px solid hsl(231, 11%, 63%);
   border-radius: 0.5rem;
+  cursor: pointer;
+  transition: border-color 360ms, background 360ms;
+}
+.addOnLabelActive {
+  border-color: hsl(213, 96%, 18%);
+  background-color: hsl(217, 100%, 97%);
 }
 .addOnCheckbox {
   width: 2rem;
@@ -15,9 +21,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: border-color 360ms, background 360ms, opacity 260ms;
 }
 .addOnCheckboxActive {
   background-color: hsl(243, 100%, 62%);
+  border-color: hsl(243, 100%, 62%);
 }
 .addOnImage {
   opacity: 0;
@@ -38,6 +47,7 @@
   line-height: normal;
   letter-spacing: 0.016rem;
   margin-bottom: 0.6rem;
+  text-transform: capitalize;
 }
 .addOntext {
   color: hsl(231, 11%, 63%);
