@@ -6,9 +6,13 @@
   height: 60rem;
   width: 94rem;
   background-color: hsl(0, 0%, 100%);
+  border-radius: 0.8rem;
 }
 
 .mainForm {
   padding-left: 10rem;
   padding-right: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

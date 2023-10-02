@@ -9,22 +9,24 @@ export default function PickAddOnsForm() {
   const nextPage = useNavigateButton('summary');
   const { addOns } = useForm();
   return (
-    <div>
+    <>
       <div>
-        <h2 className="heading headingPrimary">Pick add-ons</h2>
-        <p className="text headingText">
-          Add-ons help enhance your gaming exprerience.
-        </p>
-      </div>
-      <div className={`${styles.addOnsContainer}`}>
-        {addOns.map(addOn => (
-          <AddOnCard addOn={addOn} key={addOn.addOnName} />
-        ))}
+        <div>
+          <h2 className="heading headingPrimary">Pick add-ons</h2>
+          <p className="text headingText">
+            Add-ons help enhance your gaming exprerience.
+          </p>
+        </div>
+        <div className={`${styles.addOnsContainer}`}>
+          {addOns.map(addOn => (
+            <AddOnCard addOn={addOn} key={addOn.addOnName} />
+          ))}
+        </div>
       </div>
       <div className="btn--container">
         <Button type={'back'} onClick={backPage} />
         <Button type={'next'} onClick={nextPage} />
       </div>
-    </div>
+    </>
   );
 }

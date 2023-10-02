@@ -9,8 +9,8 @@
   font-family: 'Ubuntu', sans-serif;
 
   border: 1px solid transparent;
-  transition: color 300ms ease-in-out;
-  transition: background 260ms ease-in-out;
+  transition: color 360ms ease-in-out, background 360ms ease-in-out;
+
   font-weight: 400;
   cursor: pointer;
 }
@@ -28,7 +28,7 @@
 .btnBack {
   color: #9497a0;
   background: none;
-  transition: color 300ms ease-in-out;
+  transition: color 360ms ease-in-out;
 }
 .btnBack:hover {
   color: #5a5a5a;

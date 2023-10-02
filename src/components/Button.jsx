@@ -19,7 +19,7 @@ export default function Button({ type, onClick = null }) {
     return (
       <button className={`${styles.btn} ${styles.btnBack}`} onClick={onClick}>
         {' '}
-        go back
+        Go back
       </button>
     );
   if (type === 'confirm')

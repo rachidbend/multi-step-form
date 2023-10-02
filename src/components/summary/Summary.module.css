@@ -1,0 +1,93 @@
+.palnAndAddOnsContainer {
+  background-color: hsl(231, 100%, 99%);
+  padding: 1.9rem 2.4rem;
+  border-radius: 1.7rem;
+  margin-bottom: 2.4rem;
+}
+.selectedPlanContaniner {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(229, 24%, 87%);
+  padding-bottom: 2.7rem;
+  margin-bottom: 1.9rem;
+}
+.selectedPlanTitle {
+  color: hsl(213, 96%, 18%);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.selectedPlanPrice {
+  color: hsl(213, 96%, 18%);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.selectedAddOnsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.selectedAddOnContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.selectedAddOnsTitle {
+  color: hsl(231, 11%, 63%);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.selectedAddOnsPrice {
+  color: hsl(231, 11%, 63%);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.totalPriceContainer {
+  padding: 0 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.totalPriceHeading {
+  color: hsl(231, 11%, 63%);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.totalPrice {
+  color: hsl(243, 100%, 62%);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.btnChange {
+  border: none;
+  background: none;
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: underline;
+  color: hsl(231, 11%, 63%);
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}

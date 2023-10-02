@@ -26,6 +26,7 @@
   font-weight: 400;
   line-height: normal;
   text-transform: capitalize;
+  transition: color 360ms;
 }
 
 .yearMonthToggleLabel {

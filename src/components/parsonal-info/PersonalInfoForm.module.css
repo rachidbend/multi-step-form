@@ -23,6 +23,8 @@
   line-height: normal;
   letter-spacing: 0.016rem;
   margin-bottom: 2.4rem;
+  border: 1px solid hsl(231, 11%, 63%);
+  border-radius: 0.5rem;
 }
 .personalInfoInput::placeholder {
   color: hsl(231, 11%, 63%);
