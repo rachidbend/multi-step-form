@@ -8,9 +8,11 @@
 
   font-size: 1.4rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
-  margin-bottom: 1.8rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .personalInfoInput {
@@ -23,10 +25,54 @@
   line-height: normal;
   letter-spacing: 0.016rem;
   margin-bottom: 2.4rem;
-  border: 1px solid hsl(231, 11%, 63%);
-  border-radius: 0.5rem;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 0.8rem;
+  cursor: pointer;
 }
 .personalInfoInput::placeholder {
   color: hsl(231, 11%, 63%);
   font-family: 'Ubuntu', sans-serif;
+}
+
+.personalInfoInput:focus {
+  outline: none;
+  border-color: hsl(213, 96%, 18%);
+}
+
+.personalInfoInputCOntainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* this is for the warning for empty inputs */
+.nameInputEmpty input {
+  border-color: hsl(354, 84%, 57%);
+}
+.emailInputEmpty input {
+  border-color: hsl(354, 84%, 57%);
+}
+.phoneInputEmpty input {
+  border-color: hsl(354, 84%, 57%);
+}
+.inputReqiredText {
+  display: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  color: hsl(354, 84%, 57%);
+}
+
+.nameInputEmpty .inputReqiredText {
+  display: inline-block;
+}
+
+.emailInputEmpty .inputReqiredText {
+  display: inline-block;
+}
+
+.phoneInputEmpty .inputReqiredText {
+  display: inline-block;
 }

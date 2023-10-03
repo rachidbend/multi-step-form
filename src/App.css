@@ -26,12 +26,13 @@ html {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.064rem;
+  /* letter-spacing: 0.064rem; */
   margin-bottom: 1.2rem;
 }
 .headingText {
   color: hsl(231, 11%, 63%);
-  font-family: Inter;
+  font-family: 'Ubuntu', sans-serif;
+
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;

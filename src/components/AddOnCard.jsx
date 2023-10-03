@@ -42,7 +42,7 @@ export default function AddOnCard({ addOn }) {
       </div>
       <p className={`${styles.addOnPrice}`}>
         +$
-        {isYearly ? `${addOn.yearlyPrice}/mo` : `${addOn.monthlyPrice}/mo`}
+        {isYearly ? `${addOn.yearlyPrice}/yr` : `${addOn.monthlyPrice}/mo`}
       </p>
     </label>
   );

@@ -11,11 +11,18 @@ export default function Summary() {
 
   const navigate = useNavigate();
 
-  const { selectedPlan, isYearly, selectedAddOns, calcTotal, totalPrice } =
-    useForm();
+  const {
+    selectedPlan,
+    isYearly,
+    selectedAddOns,
+    selectedAddOnsNames,
+    calcTotal,
+    totalPrice,
+  } = useForm();
 
   useEffect(function () {
     calcTotal();
+    console.log(selectedAddOnsNames);
   }, []);
   if (!selectedPlan) return <p> select a plan first</p>;
 
@@ -52,21 +59,27 @@ export default function Summary() {
               </p>
             </div>
             <div className={`${styles.selectedAddOnsContainer}`}>
-              {selectedAddOns.map(addOn => (
-                <div
-                  key={addOn.addOnName}
-                  className={`${styles.selectedAddOnContainer}`}
-                >
-                  <p className={`${styles.selectedAddOnsTitle}`}>
-                    {addOn.addOnName}
-                  </p>
-                  <p className={`${styles.selectedAddOnsPrice}`}>
-                    {isYearly
-                      ? `+${addOn.yearlyPrice}/yr`
-                      : `+${addOn.monthlyPrice}/mo`}
-                  </p>
-                </div>
-              ))}
+              {selectedAddOnsNames.length !== 0 ? (
+                selectedAddOns.map(addOn => (
+                  <div
+                    key={addOn.addOnName}
+                    className={`${styles.selectedAddOnContainer}`}
+                  >
+                    <p className={`${styles.selectedAddOnsTitle}`}>
+                      {addOn.addOnName}
+                    </p>
+                    <p className={`${styles.selectedAddOnsPrice}`}>
+                      {isYearly
+                        ? `+${addOn.yearlyPrice}/yr`
+                        : `+${addOn.monthlyPrice}/mo`}
+                    </p>
+                  </div>
+                ))
+              ) : (
+                <p className={`${styles.selectedAddOnsTitle}`}>
+                  You haven&apos;t picked any add-ons{' '}
+                </p>
+              )}
             </div>
           </div>
           <div className={`${styles.totalPriceContainer}`}>
