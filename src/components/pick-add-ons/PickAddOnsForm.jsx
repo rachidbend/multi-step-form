@@ -14,7 +14,7 @@ export default function PickAddOnsForm() {
         <div>
           <h2 className="heading headingPrimary">Pick add-ons</h2>
           <p className="text headingText">
-            Add-ons help enhance your gaming exprerience.
+            Add-ons help enhance your gaming experience.
           </p>
         </div>
         <div className={`${styles.addOnsContainer}`}>

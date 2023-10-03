@@ -18,10 +18,14 @@ export default function Summary() {
     selectedAddOnsNames,
     calcTotal,
     totalPrice,
+    canConfirm,
+    onConfirm,
   } = useForm();
 
   useEffect(function () {
     calcTotal();
+    onConfirm();
+    console.log(canConfirm);
     console.log(selectedAddOnsNames);
   }, []);
   if (!selectedPlan) return <p> select a plan first</p>;
@@ -39,7 +43,11 @@ export default function Summary() {
           <div className={`${styles.palnAndAddOnsContainer}`}>
             <div className={`${styles.selectedPlanContaniner}`}>
               <p className={`${styles.selectedPlanTitle}`}>
-                {selectedPlan.planName} ({isYearly ? 'Yearly' : 'Monthly'}){' '}
+                {Object.keys(selectedPlan).length > 0
+                  ? `${selectedPlan.planName} (${
+                      isYearly ? 'Yearly' : 'Monthly'
+                    }) `
+                  : `You haven't selected a plan`}
                 <br />
                 <button
                   className={styles.btnChange}
@@ -51,12 +59,16 @@ export default function Summary() {
                   Change
                 </button>
               </p>
-              <p className={`${styles.selectedPlanPrice}`}>
-                $
-                {isYearly
-                  ? `${selectedPlan.yearlyPrice}/yr`
-                  : `${selectedPlan.monthlyPrice}/mo`}
-              </p>
+              {Object.keys(selectedPlan).length > 0 ? (
+                <p className={`${styles.selectedPlanPrice}`}>
+                  $
+                  {isYearly
+                    ? `${selectedPlan.yearlyPrice}/yr`
+                    : `${selectedPlan.monthlyPrice}/mo`}
+                </p>
+              ) : (
+                ''
+              )}
             </div>
             <div className={`${styles.selectedAddOnsContainer}`}>
               {selectedAddOnsNames.length !== 0 ? (
@@ -70,8 +82,8 @@ export default function Summary() {
                     </p>
                     <p className={`${styles.selectedAddOnsPrice}`}>
                       {isYearly
-                        ? `+${addOn.yearlyPrice}/yr`
-                        : `+${addOn.monthlyPrice}/mo`}
+                        ? `+$${addOn.yearlyPrice}/yr`
+                        : `+$${addOn.monthlyPrice}/mo`}
                     </p>
                   </div>
                 ))
@@ -88,15 +100,15 @@ export default function Summary() {
             </p>
             <p className={`${styles.totalPrice}`}>
               {isYearly
-                ? `+${totalPrice}/yr`
-                : `+${totalPrice ? totalPrice : '0'}/mo`}{' '}
+                ? `+$${totalPrice}/yr`
+                : `+$${totalPrice ? totalPrice : '0'}/mo`}{' '}
             </p>
           </div>
         </div>
       </div>
       <div className="btn--container">
         <Button type={'back'} onClick={backPage} />
-        <Button type={'confirm'} onClick={nextPage} />
+        <Button type={'confirm'} onClick={nextPage} disabled={!canConfirm} />
       </div>
     </>
   );

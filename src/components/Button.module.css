@@ -3,7 +3,7 @@
   border: none;
   outline: none;
   text-transform: capitalize;
-  border-radius: 0.7rem;
+  border-radius: 0.8rem;
   font-family: 'Ubuntu', sans-serif;
 
   border: 1px solid transparent;
@@ -16,7 +16,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  padding: 1.4rem 2.4rem 1.6rem 2.5rem;
+  padding: 1.3rem 2.3rem 1.5rem 2.4rem;
 }
 
 .btn:disabled {
@@ -47,6 +47,7 @@
 
 .btnConfirm {
   background: #483eff;
+  padding: 1.3rem 2.9rem 1.5rem 3.1rem;
 }
 
 .btnConfirm:hover {

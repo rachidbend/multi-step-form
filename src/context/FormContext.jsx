@@ -61,6 +61,7 @@ const initialState = {
   selectedAddOns: [],
   selectedAddOnsNames: [],
   totalPrice: 0,
+  canConfirm: false,
 };
 
 // this is the reducer
@@ -126,6 +127,19 @@ function reducer(state, action) {
     case 'isYearly/toggle':
       return { ...state, isYearly: state.isYearly ? false : true };
 
+    // check if it is possible to confirm the form
+    case 'confirm':
+      return {
+        ...state,
+        canConfirm:
+          state.name &&
+          state.email &&
+          state.phone &&
+          Object.keys(state.selectedPlan).length > 0
+            ? true
+            : false,
+      };
+
     default:
       throw new Error('Unknown action');
   }
@@ -145,6 +159,7 @@ function FormProvider({ children }) {
       selectedAddOns,
       selectedAddOnsNames,
       totalPrice,
+      canConfirm,
     },
     dispatch,
   ] = useReducer(reducer, initialState);
@@ -188,6 +203,10 @@ function FormProvider({ children }) {
     dispatch({ type: 'total/calc' });
   }
 
+  function onConfirm() {
+    dispatch({ type: 'confirm' });
+  }
+
   return (
     <FormContext.Provider
       value={{
@@ -208,6 +227,8 @@ function FormProvider({ children }) {
         selectedAddOnsNames,
         calcTotal,
         totalPrice,
+        canConfirm,
+        onConfirm,
       }}
     >
       {children}
