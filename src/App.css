@@ -55,11 +55,16 @@ a {
   background-color: hsl(215, 100%, 97%);
   display: flex;
   min-height: 100vh;
-  justify-content: start;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 600px) {
+  #root {
+    min-height: 100vh;
+    justify-content: start;
+    align-items: start;
+  }
   .form-container--mobile {
     background-color: hsl(0, 0%, 100%);
     height: auto;
@@ -82,7 +87,7 @@ a {
     justify-content: space-between;
     align-items: end;
     background-color: hsl(0, 0%, 100%);
-    margin: 0 -2.4rem;
+    margin: 0 -1.6rem;
     padding: 1.6rem;
   }
 }
