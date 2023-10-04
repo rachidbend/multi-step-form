@@ -101,3 +101,26 @@
 .btnChange:hover {
   color: hsl(243, 100%, 62%);
 }
+
+@media screen and (max-width: 600px) {
+  .selectedPlanTitle {
+    font-size: 1.4rem;
+  }
+  .selectedPlanPrice {
+    font-size: 1.4rem;
+  }
+  .totalPrice {
+    font-size: 1.6rem;
+  }
+  .selectedPlanContaniner {
+    padding-bottom: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+  .selectedAddOnsContainer {
+    gap: 1.6rem;
+  }
+  .palnAndAddOnsContainer {
+    padding: 1.9rem 1.6rem;
+    margin-bottom: 2.6rem;
+  }
+}

@@ -65,3 +65,14 @@
 .toggleActive {
   left: 0.4rem;
 }
+
+@media screen and (max-width: 600px) {
+  .plansContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.8rem;
+  }
+}

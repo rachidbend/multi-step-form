@@ -6,3 +6,18 @@
   align-items: center;
   height: 100%;
 }
+
+@media screen and (max-width: 600px) {
+  .thanksContainer {
+    position: relative;
+    top: -10.3rem;
+  }
+  .thanksContainer img {
+    height: 5.6rem;
+    width: auto;
+    margin-top: 5.5rem;
+  }
+  .thanksContainer :global(.headingText) {
+    margin-bottom: 5.5rem;
+  }
+}

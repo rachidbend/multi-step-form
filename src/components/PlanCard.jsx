@@ -29,11 +29,13 @@ export default function PlanCard({ plan }) {
           alt={`icon of ${plan.planName} plan`}
           className={styles.planCardIcon}
         />
-        <p className={styles.planCardTitle}>{plan.planName}</p>
-        <p className={styles.planCardPrice}>
-          ${isYearly ? `${plan.yearlyPrice}/yr` : `${plan.monthlyPrice}/mo`}{' '}
-        </p>
-        {isYearly && <p className={styles.planCardFree}>2 months free</p>}
+        <div>
+          <p className={styles.planCardTitle}>{plan.planName}</p>
+          <p className={styles.planCardPrice}>
+            ${isYearly ? `${plan.yearlyPrice}/yr` : `${plan.monthlyPrice}/mo`}{' '}
+          </p>
+          {isYearly && <p className={styles.planCardFree}>2 months free</p>}
+        </div>
       </label>
     </div>
   );

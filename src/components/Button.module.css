@@ -75,4 +75,8 @@
     font-size: 1.4rem;
     padding: 1.1rem 1.5rem;
   }
+  .btnConfirm {
+    background: #483eff;
+    padding: 1.1rem 2.1rem;
+  }
 }

@@ -73,3 +73,27 @@
   line-height: normal;
   margin-left: auto;
 }
+
+@media screen and (max-width: 600px) {
+  .addOnLabel {
+    padding: 1.3rem 1.5rem;
+  }
+  .addOnTitle {
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .addOntext {
+    font-size: 1.2rem;
+  }
+  .addOnCheckbox {
+    margin-right: 1.6rem;
+  }
+  .addOnPrice {
+    font-size: 1.3rem;
+
+    font-weight: 500;
+
+    letter-spacing: -0.078rem;
+  }
+}

@@ -32,7 +32,7 @@ export default function Summary() {
 
   return (
     <>
-      <div>
+      <div className="form-container--mobile">
         <div>
           <h2 className="heading headingPrimary">Finishing up</h2>
           <p className="text headingText">

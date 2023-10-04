@@ -53,3 +53,17 @@
   border: 1px solid #524e98;
   background-color: hsl(217, 100%, 97%);
 }
+
+@media screen and (max-width: 600px) {
+  .planCard {
+    width: 100%;
+  }
+  .planCardLabel {
+    padding: 1.9rem 0 1.1rem 1.5rem;
+    display: flex;
+  }
+  .planCardIcon {
+    margin-bottom: 0;
+    margin-right: 1.4rem;
+  }
+}

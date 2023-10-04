@@ -11,7 +11,7 @@ export default function SelectPlanForm() {
   console.log(Object.keys(selectedPlan).length);
   return (
     <>
-      <div>
+      <div className="form-container--mobile">
         <div>
           <h2 className=" heading headingPrimary">Select your plan</h2>
           <p className="text headingText">

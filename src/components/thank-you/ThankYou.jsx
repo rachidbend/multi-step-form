@@ -4,7 +4,7 @@ import styles from './ThankYou.module.css';
 export default function ThankYou() {
   return (
     <div className={`${styles.thanksContainer}`}>
-      <div>
+      <div className="form-container--mobile">
         <img
           className={`${styles.thanksIcon}`}
           src={iconThanks}
