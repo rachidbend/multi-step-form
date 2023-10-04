@@ -76,3 +76,17 @@
 .phoneInputEmpty .inputReqiredText {
   display: inline-block;
 }
+
+@media screen and (max-width: 600px) {
+  .personalInfoLabel {
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+  .personalInfoInput {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0rem;
+    margin-bottom: 1.6rem;
+  }
+}

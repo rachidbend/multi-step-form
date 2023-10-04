@@ -69,3 +69,10 @@
   cursor: auto;
   border: none;
 }
+
+@media screen and (max-width: 600px) {
+  .btn {
+    font-size: 1.4rem;
+    padding: 1.1rem 1.5rem;
+  }
+}

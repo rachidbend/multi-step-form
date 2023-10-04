@@ -28,7 +28,7 @@ export default function PersonalInfoForm() {
 
   return (
     <>
-      <div>
+      <div className="form-container--mobile">
         <div>
           <h2 className="heading headingPrimary">Personal info</h2>
           <p className="text headingText">

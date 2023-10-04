@@ -15,7 +15,7 @@
 }
 .sideBarNumber {
   color: hsl(213, 96%, 18%);
-  font-family: Ubuntu;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
@@ -42,7 +42,7 @@
 }
 .sideBarStep {
   color: hsl(228, 100%, 84%);
-  font-family: Ubuntu;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 1.3rem;
   font-style: normal;
   font-weight: 400;
@@ -54,11 +54,38 @@
 
 .sideBarTitle {
   color: hsl(0, 0%, 100%);
-  font-family: Ubuntu;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.03rem;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .sideBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.6rem;
+    background-image: url('../../assets/images/bg-sidebar-mobile.svg');
+
+    padding: 0;
+    padding-top: 3.2rem;
+    height: 17.2rem;
+    width: auto;
+    background-size: cover;
+  }
+  .sideBarStepContainer {
+    display: flex;
+    margin-bottom: 0;
+  }
+  .sideBarStep {
+    display: none;
+  }
+
+  .sideBarTitle {
+    display: none;
+  }
 }
