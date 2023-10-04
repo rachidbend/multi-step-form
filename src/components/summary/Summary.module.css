@@ -109,6 +109,9 @@
   .selectedPlanPrice {
     font-size: 1.4rem;
   }
+  .totalPriceContainer {
+    padding: 0 1.6rem;
+  }
   .totalPrice {
     font-size: 1.6rem;
   }
